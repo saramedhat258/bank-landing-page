@@ -1,0 +1,327 @@
+body {
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+/* navbar /////////// */
+nav {
+    z-index: 10;
+    position: relative;
+}
+
+nav ul li {
+    list-style-type: none;
+
+}
+.navbar ul  li{
+    color: gray;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav .navbar ul {
+    display: flex;
+}
+
+.dropmenu {
+    width: 300px;
+    position: absolute;
+    right: 0.5rem;
+    top: 4rem;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.dropmenu li {
+    padding: 5px 0;
+}
+.dropmenu a{
+    color: black;
+}
+.dropmenu ul{
+    padding-left: 0;
+}
+
+.menu {
+    margin-right: 10px;
+    width: 30px;
+    display: none;
+}
+
+.requset {
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+/* intro //////////// */
+.backg {
+    background-color: #FAFAFA;
+    min-height: 95vh;
+}
+
+.backgm,
+.explainmobile {
+    display: none;
+}
+
+.backimg {
+    position: relative;
+    overflow: hidden;
+}
+
+.backimg .phone {
+    position: absolute;
+    left: 150px;
+    top: -110px;
+    z-index: 1;
+}
+
+.backimg .bg {
+    position: absolute;
+    left: -50px;
+    top: -280px;
+    min-height: 500px;
+}
+
+.explain {
+    width: 30%;
+}
+
+.explain h4,
+.explainmobile h4 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.explain p,
+.why p,
+.by,
+.latest-card .desc,
+.explainmobile p {
+    color: gray;
+}
+
+/*why ///////////////*/
+.why {
+    background-color: #F4F5F7;
+    min-height: 90vh;
+}
+
+/* laatest */
+.latest {
+    background-color: #FAFAFA;
+    min-height: 100vh;
+}
+
+.latest-card img {
+    width: 100%;
+    height: 177px;
+}
+
+.by {
+    font-size: 12px;
+}
+
+/* footer ///////////// */
+footer {
+    background-color: #2D314E;
+    min-height: 30vh;
+    font-size: 14px;
+    width: 100%;
+}
+
+@media(max-width:1200px){
+    .rightfooter .requset{
+        width: 80% !important;
+    }
+}
+
+@media(min-width:992px) {
+    .latest-card {
+        width: 24% !important;
+    }
+}
+@media(max-width:800px){
+
+    .leftfooter{
+        width: 100% !important;
+        margin: auto;
+        
+    }
+    .leftfooter .first, .leftfooter .second,.rightfooter,.leftfooter .icons,.contact{
+        width: 50% !important;
+        margin: auto !important;
+    }
+    .contact{
+        margin: 20px auto !important;
+    }
+    .rightfooter p{
+        margin-bottom: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+@media(max-width:850px) {
+
+    .navbar ul,
+    .navbar button,
+    .backg {
+        display: none !important;
+    }
+
+    .menu,
+    .open,
+    .backgm,
+    .explainmobile {
+        display: block;
+    }
+
+    .backgm {
+        min-height: 500px;
+    }
+
+    .backimgmobile {
+        position: relative;
+    }
+
+    .backimgmobile .phone {
+        position: absolute;
+        left: 2rem;
+        top: -18rem
+    }
+
+    .backimgmobile .bg {
+        position: absolute;
+        top: -10rem;
+        width: 100%;
+    }
+
+    .explainmobile {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+    }
+    .rightfooter .requset{
+        width: 100% !important;
+    }
+}
+
+@media(max-width:800px) {
+
+    footer,
+    .leftfooter,
+    .rightfooter,
+    .icons {
+        display: block !important;
+    }
+
+    .backimgmobile .phone {
+        width: 95%;
+        left: 1rem;
+    }
+}
+@media(max-width:768px){
+    .cards .ca,.whydiv, .whydiv p,.latest,.latest-card{
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media(max-width:700px) {
+
+    .backimgmobile .phone {
+        top:-15rem
+    }
+    .backimgmobile .bg{
+        top: -8rem;
+    }
+}
+@media(max-width:600px){
+    .backgm{
+        min-height: 400px;
+    }
+    .explainmobile{
+        width: 70%;
+    }
+    .whydiv {
+        padding-top: 0 !important;
+    }
+}
+@media(max-width:550px){
+    .backgm{
+        min-height: 350px;
+    }
+    .backimgmobile .phone {
+        top:-12rem
+    }
+    .backimgmobile .bg{
+        top: -5rem;
+    }
+    .explainmobile{
+        width: 80%;
+    }
+    .whydiv p{
+        width: 70% !important;
+    }
+    .icons{
+        width:100% !important ;
+    }
+    .contact{
+        width: 100% !important;
+    }
+}
+@media(max-width:450px){
+    .backgm{
+        min-height: 350px;
+    }
+    .backimgmobile .phone {
+        top:-8rem
+    }
+    .explainmobile h4{
+        font-size: 45px;
+    }
+    .backimgmobile .bg{
+        top: -2rem;
+    }
+    .explainmobile{
+        width: 95%;
+    }
+    .whydiv p{
+        width: 100% !important;
+    }
+    .open{
+        width: 90%;
+    }
+}
+@media(max-width:400px){
+    .backgm{
+        min-height: 250px;
+    }
+    .backimgmobile .phone {
+        top:-6rem
+    }
+    .explainmobile h4{
+        font-size: 40px;
+    }
+    .explainmobile p{
+        font-size: 16px;
+    }
+}
+@media(max-width:330px){
+    .backgm{
+        min-height: 200px;
+    }
+    .backimgmobile .phone {
+        top:-6rem
+    }
+    .explainmobile h4{
+        font-size: 35px;
+    }
+}
